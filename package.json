@@ -1,0 +1,17 @@
+{
+  "name": "SQL Employee Database",
+  "version": "1.0.0",
+  "description": "Use the command line to navigate and make changes to an employee database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.2.0",
+    "dotenv": "^16.0.3",
+    "inquirer": "^8.2.4",
+    "console.table": "^0.10.0"
+  }
+}
