@@ -3,10 +3,11 @@ Use the command line to navigate and make changes to an employee database. Built
 <br><br>
 
 ## Video Walk Through of Application
-[Employee Database Walkthrough]()
+[Employee Database Walkthrough](https://drive.google.com/file/d/1K_Lin1m7KBi2HXNOxMurnwcmxgSg1u4k/view?usp=sharing)
 <br><br>
 ## --Installation and Usage Info--
-After cloning the repo, run *npm i* from the root directory of the project to install the necessary dependencies.
+After cloning the repo, run *npm i* from the root directory of the project to install the necessary dependencies.  
+Then, simply run *npm start* to prompt the application to open in your command line.
 <br/><br/>
 ## Challenge Description | User Story
 ### **AS A Business Owner**  
@@ -32,4 +33,4 @@ WHEN I choose to update an employee role,
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database.  
 <br/>
 ## Employee Database Screenshot
-![Employee Database]()
+![Employee Database](./sql-employee-database-screenshot.JPG)

@@ -10,7 +10,8 @@ const openingQuestion = [
             'Add a Department',
             'Add a Role',
             'Add an Employee',
-            'Update an Employee\'s Role',
+            'Update an Employee Role',
+            'Delete a Department',
             'Exit'
         ]
     }
@@ -41,7 +42,6 @@ const generateAddRolePrompt = (allDepartments) => {
             name: 'roleDepartment',
             message: 'What department does this role belong to?',
             choices: allDepartments
-            
         }
     ]
 }
@@ -77,17 +77,28 @@ const generateUpdateEmployeeRolePrompt = (allRoles, allEmployees) => {
     return [
         {
             type: 'list',
-            name: 'employee',
+            name: 'employeeToUpdate',
             message: 'Which employee\'s role would you like to update?',
             choices: allEmployees
         },
         {
             type: 'list',
-            name: 'role',
+            name: 'updatedRole',
             message: 'What is the employee\'s new role?',
             choices: allRoles
         }
     ]
 }
 
-module.exports = { openingQuestion, addDepartmentPrompt, generateAddRolePrompt, generateAddEmployeePrompt, generateUpdateEmployeeRolePrompt };
+const generateDeleteDepartmentPrompt = (allDepartments) => {
+    return [
+        {
+            type: 'list',
+            name: 'departmentToDelete',
+            message: 'Which department would you like to delete?',
+            choices: allDepartments
+        }
+    ]
+}
+
+module.exports = { openingQuestion, addDepartmentPrompt, generateAddRolePrompt, generateAddEmployeePrompt, generateUpdateEmployeeRolePrompt, generateDeleteDepartmentPrompt };
