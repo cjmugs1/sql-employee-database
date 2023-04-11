@@ -73,7 +73,7 @@ const generateAddEmployeePrompt = (allRoles, allEmployees) => {
     ]
 }
 
-const generateUpdateEmployeeRolePrompt = (allEmployees, allRoles) => {
+const generateUpdateEmployeeRolePrompt = (allRoles, allEmployees) => {
     return [
         {
             type: 'list',
