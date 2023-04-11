@@ -32,4 +32,4 @@ WHEN I choose to update an employee role,
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database.  
 <br/>
 ## Employee Database Screenshot
-![noteTaker](./public/assets/note-taker-screenshot.jpg)
+![Employee Database]()

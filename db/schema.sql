@@ -24,9 +24,6 @@ CREATE TABLE employee (
 );
 
 show tables;
-
 describe department;
-
 describe roles;
-
 describe employee;

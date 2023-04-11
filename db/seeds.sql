@@ -1,15 +1,37 @@
-INSERT INTO favorite_books (book_name, section, in_stock, quantity)
-VALUES ("The Great Gatsby", 1, true, 11),
-       ("Huckleberry Finn", 1, true, 4),
-       ("100 Years of Solitude", 3, false, 0),
-       ("Things Fall Apart", 4 , false, 0 ),
-       ("Crime and Punishment", 1, true, 15),
-       ("Moby Dick", 2, true, 11),
-       ("Decameron", 5, false, 0),
-       ("The Wind and the Willows", 2, true, 11),
-       ("Ulysses", 3, true, 8),
-       ("Madame Bovary", 4 , true, 9 ),
-       ("Catcher in the Rye", 1, true, 23),
-       ("Catch-12", 5, true, 18),
-       ("Hamlet", 5, true, 14);
-       
+INSERT INTO department(department_name)
+VALUES 
+    ("Sales"),
+    ("Engineering"),
+    ("Legal"),
+    ("Human Resources"),
+    ("Finance");
+
+INSERT INTO roles (title, salary, department_id)
+VALUES 
+    ("Sales Lead", 140000, 1),
+    ("Account Manager", 120000, 1),
+    ("Inside Sales Coordinator", 65000, 1),
+    ("Lead Engineer", 150000, 2),
+    ("Software Engineer", 120000, 2),
+    ("Legal Team Lead", 110000, 3),
+    ("Lawyer", 105000, 3),
+    ("HR Lead", 85000, 4),
+    ("Accountant", 75000, 5);
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES 
+    ("John", "Ramon", 1, null),
+    ("Mica", "For", 2, 1),
+    ("Bob", "Saget", 2, 1),
+    ("Michelle", "Castro", 3, 1),
+    ("Austin", "Powers", 4, null),
+    ("Oscar", "DeLaHoya", 5, 5),
+    ("Pablo", "Escobar", 6, null),
+    ("Brad", "Gelina", 7, 7),
+    ("Jimmy", "Buffet", 7, 7),
+    ("Lebron", "Lebron", 8, null),
+    ("Yami", "Sukihero", 9, null);
+
+SELECT * FROM department;
+SELECT * FROM roles;
+SELECT * FROM employee;
